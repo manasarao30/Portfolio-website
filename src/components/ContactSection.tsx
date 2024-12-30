@@ -76,7 +76,7 @@ const ContactSection = styled.section`
 `;
 // Sound play function
 const playSound = () => {
-  const audio = new Audio("/sounds/click.mp3");
+  const audio = new Audio("./sounds/click.mp3");
   audio.play();
 };
 const Contact = () => {

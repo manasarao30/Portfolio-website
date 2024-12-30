@@ -45,7 +45,7 @@ const Header = styled.header`
 
 const HeaderComponent = () => {
   const playSound = () => {
-    const audio = new Audio("/sounds/click.mp3");
+    const audio = new Audio("./sounds/click.mp3");
     audio.play();
   };
 

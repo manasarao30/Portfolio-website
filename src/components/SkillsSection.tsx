@@ -334,7 +334,7 @@ const SkillsSection = () => (
           style={{ color: "inherit", textDecoration: "none" }}
           onClick={(e) => {
             e.preventDefault(); 
-            const audio = new Audio("/sounds/click.mp3");
+            const audio = new Audio("./sounds/click.mp3");
             audio.play();
             setTimeout(() => {
               window.open(

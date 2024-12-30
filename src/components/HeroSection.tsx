@@ -12,7 +12,7 @@ const Hero = styled.section`
   padding: 0; 
 
   .profile-image {
-    background-image: url('/images/mana.png');
+    background-image: url('./images/mana.png');
     background-size: cover;
     background-position: center;
     width: 250px;
@@ -58,7 +58,7 @@ const Hero = styled.section`
   }
 `;
 const playClickSound = () => {
-  const audio = new Audio("/sounds/click.mp3");
+  const audio = new Audio("./sounds/click.mp3");
   audio.play();
 };
 const HeroSection = () => (

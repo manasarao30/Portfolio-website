@@ -137,7 +137,7 @@ const AboutSection = styled.section`
 
 
 const playSound = () => {
-  const audio = new Audio("/sounds/click.mp3");
+  const audio = new Audio("./sounds/click.mp3");
   audio.play();
 };
 const HomePage: React.FC = () => {
@@ -194,7 +194,7 @@ const HomePage: React.FC = () => {
             <>
               <div className="timeline-item">
                 <div className="bubble">
-                  <img src="/images/neu.jpeg" alt="Education 1" />
+                  <img src="./images/neu.jpeg" alt="Education 1" />
                 </div>
                 <div className="content">
                   <p className="company">Northeastern University</p>
@@ -206,7 +206,7 @@ const HomePage: React.FC = () => {
 
               <div className="timeline-item">
                 <div className="bubble">
-                  <img src="/images/nmamit.jpeg" alt="Education 2" />
+                  <img src="./images/nmamit.jpeg" alt="Education 2" />
                 </div>
                 <div className="content">
                   <p className="company">NMAM Institute of Technology</p>
@@ -224,7 +224,7 @@ const HomePage: React.FC = () => {
             <>
               <div className="timeline-item">
                 <div className="bubble">
-                  <img src="/images/neu.jpeg" alt="Education 1" />
+                  <img src="./images/neu.jpeg" alt="Education 1" />
                 </div>
                 <div className="content">
                   <p className="company">Northeastern University</p>
@@ -235,7 +235,7 @@ const HomePage: React.FC = () => {
 
               <div className="timeline-item">
                 <div className="bubble">
-                  <img src="/images/accenture.jpeg" alt="Education 2" />
+                  <img src="./images/accenture.jpeg" alt="Education 2" />
                 </div>
                 <div className="content">
                   <p className="company">Accenture</p>
@@ -246,7 +246,7 @@ const HomePage: React.FC = () => {
 
               <div className="timeline-item">
                 <div className="bubble">
-                  <img src="/images/verzeo.jpeg" alt="Education 2" />
+                  <img src="./images/verzeo.jpeg" alt="Education 2" />
                 </div>
                 <div className="content">
                   <p className="company">Verzeo</p>

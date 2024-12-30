@@ -101,7 +101,7 @@ const ProjectsWrapper = styled.section`
 `;
 
 const playClickSound = () => {
-  const audio = new Audio("/sounds/click.mp3");
+  const audio = new Audio("./sounds/click.mp3");
   audio.play();
 };
 
@@ -110,35 +110,35 @@ const projectsData = [
     id: 1,
     category: "Web",
     title: "Portfolio Website",
-    image: "/images/web.jpg",
+    image: "./images/web.jpg",
     link: "https://github.com/manasarao30/portfolio-website",
   },
   {
     id: 2,
     category: "Web",
     title: "Kanbas: Online Learning Management System",
-    image: "/images/lms.webp",
+    image: "./images/lms.webp",
     link: "https://github.com/manasarao30/kanbas-react-web-app",
   },
   {
     id: 3,
     category: "Web",
     title: "Flappy Bird Game",
-    image: "/images/flappy.webp",
+    image: "./images/flappy.webp",
     link: "https://github.com/manasarao30/Flappy-Bird-Game",
   },
   {
     id: 4,
     category: "Cloud",
     title: "AWS Cloud Resume",
-    image: "/images/aws.jpg",
+    image: "./images/aws.jpg",
     link: "https://github.com/manasarao30/aws-cloud-resume",
   },
   {
     id: 5,
     category: "Cloud",
     title: "Serverless Application",
-    image: "/images/serverless.webp",
+    image: "./images/serverless.webp",
     link: "https://github.com/manasarao30/serverless-app",
   },
   {
@@ -152,7 +152,7 @@ const projectsData = [
     id: 7,
     category: "Data Analysis",
     title: "Netflix Tableau Dashboard",
-    image: "/images/netflix.png",
+    image: "./images/netflix.png",
     link: "https://public.tableau.com/app/profile/manasa.rao1397/viz/NetflixDashboard_17061227525110/Netflix",
   },
 ];
