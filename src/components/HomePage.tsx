@@ -12,13 +12,25 @@ const getRandomColor = () => {
   const colors = ["#e63946", "#457b9d", "#2a9d8f", "#f4a261", "#e9c46a"];
   return colors[Math.floor(Math.random() * colors.length)];
 };
+// const Wrapper = styled.div`
+//   font-family: "Share Tech Mono", serif;
+
+//   background-color: black;
+//   color: white;
+//   min-height: 100vh;
+//   padding: 20px;
+// `;
 const Wrapper = styled.div`
   font-family: "Share Tech Mono", serif;
-
   background-color: black;
   color: white;
-  min-height: 100vh;
   padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: 576px) {
+    padding: 15px;
+  }
 `;
 
 const ToggleWrapper = styled.div`
@@ -30,6 +42,7 @@ const ToggleWrapper = styled.div`
 
   button {
     background-color: white;
+    justify-content: center;
     color: black;
     border: none;
     border-radius: 10px;
@@ -110,6 +123,7 @@ const TimelineWrapper = styled.div`
 
 const AboutSection = styled.section`
   padding: 30px;
+
 
   .about-title {
     font-size: 3rem;

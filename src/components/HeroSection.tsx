@@ -8,7 +8,8 @@ const Hero = styled.section`
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  min-height: 100vh; 
+  padding-top: 70px; /* Adjust for fixed header height */
+  scroll-margin-top: 70px; /* Ensure proper scrolling when links are clicked */
   padding: 0; 
 
   .profile-image {
@@ -57,6 +58,8 @@ const Hero = styled.section`
     }
   }
 `;
+
+
 const playClickSound = () => {
   const audio = new Audio("./sounds/click.mp3");
   audio.play();
