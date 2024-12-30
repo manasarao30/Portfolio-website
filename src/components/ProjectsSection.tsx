@@ -145,7 +145,7 @@ const projectsData = [
     id: 6,
     category: "ML",
     title: "Advanced User Authentication using Mouse Dynamics",
-    image: "/images/mouse.jpg",
+    image: "./images/mouse.jpg",
     link: "https://github.com/manasarao30/MouseDynamics",
   },
   {
