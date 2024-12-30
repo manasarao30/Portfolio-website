@@ -26,6 +26,8 @@ const Wrapper = styled.div`
   color: white;
   padding: 20px;
   max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+
   box-sizing: border-box;
 
   @media (max-width: 576px) {

@@ -8,6 +8,8 @@ const Hero = styled.section`
   justify-content: center; 
   align-items: center; 
   text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+
   scroll-margin-top: 70px; /* Ensure proper scrolling when links are clicked */
   padding: 0; 
 
