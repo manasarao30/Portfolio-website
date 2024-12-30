@@ -56,7 +56,21 @@ const ContactSection = styled.section`
         }
       }
     }
+@media (max-width: 768px) {
+    flex-direction: column; /* Stack form and contact info vertically */
+    align-items: center; /* Center the items horizontally */
 
+    .form-container {
+      margin-right: 0; /* Remove the margin when stacked */
+      width: 100%; /* Ensure it spans the full width */
+    }
+
+    .contact-info {
+      margin-top: 20px; /* Add spacing between form and contact info */
+      text-align: center; /* Center the text */
+    }
+  }
+}
     .contact-info {
       flex: 1;
       color: white;
@@ -72,7 +86,7 @@ const ContactSection = styled.section`
         text-transform: none !important; 
       }
     }
-  }
+  }  
 `;
 // Sound play function
 const playSound = () => {
