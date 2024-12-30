@@ -8,13 +8,13 @@ const Hero = styled.section`
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  padding-top: 70px; /* Adjust for fixed header height */
   scroll-margin-top: 70px; /* Ensure proper scrolling when links are clicked */
   padding: 0; 
 
   .profile-image {
     background-image: url('./images/mana.png');
     background-size: cover;
+      padding-top: 200px; /* Adjust for fixed header height */
     background-position: center;
     width: 250px;
     height: 250px;
@@ -57,6 +57,46 @@ const Hero = styled.section`
       }
     }
   }
+    /* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero .buttons button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .hero .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .buttons button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .hero .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+}
 `;
 
 
