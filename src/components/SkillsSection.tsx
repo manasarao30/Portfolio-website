@@ -417,27 +417,13 @@ const SkillsSectionWrapper = styled.section`
     }
   }
 `;
-//     .skill-badges {
-//       flex: 1;
-//       display: flex;
-//       flex-wrap: wrap;
-//       gap: 10px;
-
-//       @media (max-width: 768px) {
-//         gap: 8px; /* Reduce gap for smaller screens */
-//       }
-
-//       @media (max-width: 480px) {
-//         gap: 6px; /* Further reduce gap for mobile devices */
-//       }
-//     }
-//   }
-// `;
 
 // Styling for Individual SkillBadge
 interface SkillBadgeProps {
   bgColor: string;
 }
+
+
 
 const StyledSkillBadge = styled.span<SkillBadgeProps>`
   display: inline-block;

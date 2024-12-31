@@ -14,16 +14,28 @@ const Hero = styled.section`
   padding: 0; 
 
   .profile-image {
-    background-image: url('./images/mana.png');
-    background-size: cover;
-      padding-top: 200px; /* Adjust for fixed header height */
-    background-position: center;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 0 auto 20px; 
+  background-image: url('./images/mana.png');
+  background-size: cover;
+  padding-top: 200px; /* Adjust for fixed header height */
+  margin-top: 100px; /* Add space before the profile image */
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto 20px; 
+}
+  @media (max-width: 768px) {
+  .profile-image {
+    margin-top: 30px; /* Reduce space for smaller screens */
   }
+}
+
+@media (max-width: 576px) {
+  .profile-image {
+    margin-top: 20px; /* Further reduce space for very small screens */
+  }
+}
 
   h1 {
     font-size: 4rem;
