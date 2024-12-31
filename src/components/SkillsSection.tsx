@@ -310,8 +310,6 @@
 //         />
 //       </div>
 
-     
-
 //     </div>
 
 //     <div
@@ -333,7 +331,7 @@
 //           rel="noopener noreferrer"
 //           style={{ color: "inherit", textDecoration: "none" }}
 //           onClick={(e) => {
-//             e.preventDefault(); 
+//             e.preventDefault();
 //             const audio = new Audio("./sounds/click.mp3");
 //             audio.play();
 //             setTimeout(() => {
@@ -341,7 +339,7 @@
 //                 "https://www.credly.com/badges/f86c1434-c51e-4660-8c6d-27a123c464ea",
 //                 "_blank"
 //               );
-//             }, 200); 
+//             }, 200);
 //           }}
 //         >
 //           AWS Certified Developer - Associate DVA-C02, Dec 2024 - Dec 2027 (Click to view)
@@ -355,7 +353,6 @@
 // );
 
 // export default SkillsSection;
-
 
 import React from "react";
 import styled from "styled-components";
@@ -399,15 +396,19 @@ const SkillsSectionWrapper = styled.section`
         font-size: 1rem; /* Adjust font size for mobile devices */
       }
     }
-
     .skill-badges {
-      flex: 1;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
 
       @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(150px, 1fr)
+        ); /* Apply grid layout */
         gap: 8px; /* Reduce gap for smaller screens */
+        justify-content: flex-start; /* Ensure alignment to the same X-axis */
       }
 
       @media (max-width: 480px) {
@@ -416,6 +417,22 @@ const SkillsSectionWrapper = styled.section`
     }
   }
 `;
+//     .skill-badges {
+//       flex: 1;
+//       display: flex;
+//       flex-wrap: wrap;
+//       gap: 10px;
+
+//       @media (max-width: 768px) {
+//         gap: 8px; /* Reduce gap for smaller screens */
+//       }
+
+//       @media (max-width: 480px) {
+//         gap: 6px; /* Further reduce gap for mobile devices */
+//       }
+//     }
+//   }
+// `;
 
 // Styling for Individual SkillBadge
 interface SkillBadgeProps {
@@ -522,9 +539,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>
-        Databases:
-      </h3>
+      <h3>Databases:</h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
@@ -547,7 +562,7 @@ const SkillsSection = () => (
           label="SQL Server"
         />
       </div>
-     </div>
+    </div>
 
     {/* Cloud Platforms */}
     <div
@@ -557,9 +572,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>
-        Cloud Platforms:
-      </h3>
+      <h3>Cloud Platforms:</h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/aws-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
@@ -580,9 +593,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>
-        Frameworks & Tools:
-      </h3>
+      <h3>Frameworks & Tools:</h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
@@ -619,9 +630,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>
-        Machine Learning & AI:
-      </h3>
+      <h3>Machine Learning & AI:</h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/tensorflow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white"
@@ -642,7 +651,6 @@ const SkillsSection = () => (
       </div>
     </div>
 
-
     {/* DevOps Tools */}
     <div
       style={{
@@ -651,9 +659,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>
-        DevOps Tools:
-      </h3>
+      <h3>DevOps Tools:</h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white"
@@ -690,9 +696,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>
-        Other Tools:
-      </h3>
+      <h3>Other Tools:</h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white"
@@ -733,36 +737,34 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-  <h3>
-    Certification:
-  </h3>
-  <div style={{ display: "flex", alignItems: "center", flex: 1 }}>
-    <SkillBadge
-      icon="https://img.shields.io/badge/aws-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
-      label={
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "inherit", textDecoration: "none" }}
-          onClick={(e) => {
-            e.preventDefault(); 
-            const audio = new Audio("./sounds/click.mp3");
-            audio.play();
-            setTimeout(() => {
-              window.open(
-                "https://www.credly.com/badges/f86c1434-c51e-4660-8c6d-27a123c464ea",
-                "_blank"
-              );
-            }, 200); 
-          }}
-        >
-          AWS Certified Developer - Associate DVA-C02, Dec 2024 - Dec 2027 (Click to view)
-        </a>
-      }
-    />
-  </div>
-</div>
-
+      <h3>Certification:</h3>
+      <div style={{ display: "flex", alignItems: "center", flex: 1 }}>
+        <SkillBadge
+          icon="https://img.shields.io/badge/aws-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
+          label={
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "inherit", textDecoration: "none" }}
+              onClick={(e) => {
+                e.preventDefault();
+                const audio = new Audio("./sounds/click.mp3");
+                audio.play();
+                setTimeout(() => {
+                  window.open(
+                    "https://www.credly.com/badges/f86c1434-c51e-4660-8c6d-27a123c464ea",
+                    "_blank"
+                  );
+                }, 200);
+              }}
+            >
+              AWS Certified Developer - Associate DVA-C02, Dec 2024 - Dec 2027
+              (Click to view)
+            </a>
+          }
+        />
+      </div>
+    </div>
   </SkillsSectionWrapper>
 );
 
