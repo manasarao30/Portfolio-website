@@ -138,7 +138,7 @@ const HeroSection = () => (
         </button>
         <button onClick={() => {
           playClickSound();
-          window.open('https://www.linkedin.com/in/manasarao30/', '_blank');
+          window.open('https://github.com/manasarao30', '_blank');
         }}>
           GitHub
         </button>

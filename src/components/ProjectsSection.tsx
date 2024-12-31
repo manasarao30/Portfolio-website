@@ -130,7 +130,7 @@ const projectsData = [
     category: "Web",
     title: "Portfolio Website",
     image: "./images/web.jpg",
-    link: "https://github.com/manasarao30/portfolio-website",
+    link: "https://github.com/manasarao30/Portfolio-website",
   },
   {
     id: 2,
@@ -158,7 +158,7 @@ const projectsData = [
     category: "Cloud",
     title: "Serverless Application",
     image: "./images/serverless.webp",
-    link: "https://github.com/manasarao30/serverless-app",
+    link: "https://github.com/manasarao30/Serverless-Application",
   },
   {
     id: 6,
