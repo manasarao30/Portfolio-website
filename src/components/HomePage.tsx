@@ -29,6 +29,45 @@ const Wrapper = styled.div`
   }
 `;
 
+// const ToggleWrapper = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 20px;
+//   margin-bottom: 20px;
+
+//   button {
+//     background-color: white;
+//     justify-content: center;
+//     color: black;
+//     border: none;
+//     border-radius: 10px;
+//     padding: 10px 20px;
+//     font-size: 1.5rem;
+//     font-family: "Share Tech Mono", serif;
+
+//     @media (max-width: 768px) {
+//     padding: 8px 16px;
+//     font-size: 0.9rem;
+//     }
+//      @media (max-width: 576px) {
+//    padding: 6px 12px;
+//     font-size: 0.8rem;
+//     }
+
+//     cursor: pointer;
+//     transition: background-color 0.3s ease;
+
+//     &.active {
+//       background-color: gray;
+//       color: white;
+//     }
+//     &:hover {
+//       background-color: gray;
+//       color: white;
+//     }
+//   }
+// `;
 const ToggleWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -45,16 +84,6 @@ const ToggleWrapper = styled.div`
     padding: 10px 20px;
     font-size: 1.5rem;
     font-family: "Share Tech Mono", serif;
-
-    @media (max-width: 768px) {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    }
-     @media (max-width: 576px) {
-   padding: 6px 12px;
-    font-size: 0.8rem;
-    }
-
     cursor: pointer;
     transition: background-color 0.3s ease;
 
@@ -62,9 +91,20 @@ const ToggleWrapper = styled.div`
       background-color: gray;
       color: white;
     }
+
     &:hover {
       background-color: gray;
       color: white;
+    }
+
+    @media (max-width: 768px) {
+      padding: 8px 16px;
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    @media (max-width: 576px) {
+      padding: 6px 12px; /* Same padding as LinkedIn and GitHub buttons */
+      font-size: 0.8rem; /* Adjust font size to match smaller screens */
     }
   }
 `;

@@ -61,7 +61,7 @@ const Hero = styled.section`
       background-color: white;
       color: black;
       border: none;
-      border-radius: 5px;
+      border-radius: 10px;
       cursor: pointer;
       transition: background-color 0.3s ease;
 
