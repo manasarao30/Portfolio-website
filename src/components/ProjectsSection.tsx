@@ -40,7 +40,17 @@ const ProjectsWrapper = styled.section`
         background-color: gray;
         color: white;
       }
+    @media (max-width: 768px) {
+      padding: 8px 12px; /* Smaller padding on tablet screens */
+      font-size: 1rem; /* Reduce font size for smaller screens */
     }
+
+    @media (max-width: 576px) {
+      padding: 6px 10px; /* Further reduce padding for small devices */
+      font-size: 0.9rem; /* Smaller font size for mobile devices */
+    }
+      }
+      
   }
 
   .projects-grid {
