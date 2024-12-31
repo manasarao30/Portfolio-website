@@ -120,11 +120,12 @@ const playClickSound = () => {
 };
 const HeroSection = () => (
   <Hero>
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+   <motion.div
+    initial={{ opacity: 0, y: 50 }} // Animation starts 50px below
+    animate={{ opacity: 1, y: 0 }}  // Moves back to its original position
+    transition={{ duration: 0.5 }}
+    style={{ marginTop: "100px" }} // Add space consistently, even with animation
+  >
       <div className="profile-image"></div>
       <h1>Hi, my name is Manasa.</h1>
       <p>I'm a Software Engineer based in the United States.</p>
