@@ -121,8 +121,63 @@ const TimelineWrapper = styled.div`
       }
     }
   }
-`;
+     @media (max-width: 768px) {
+    .timeline-item {
+      .bubble {
+        width: 100px; /* Ensure all bubbles have the same size */
+        height: 100px;
+      }
 
+      .content {
+        margin-left: 15px;
+
+        .title {
+          font-size: 1.5rem;
+        }
+        .company {
+          font-size: 1.3rem;
+        }
+        .year,
+        .position {
+          font-size: 1.2rem;
+        }
+        .description {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .timeline-item {
+      flex-direction: column; /* Stack vertically */
+      align-items: flex-start;
+
+      .bubble {
+        width: 100px; /* Keep the same size for all bubbles */
+        height: 100px;
+        margin-bottom: 10px;
+      }
+
+      .content {
+        margin-left: 0;
+        text-align: left;
+
+        .title {
+          font-size: 1.3rem;
+        }
+        .company,
+        .year,
+        .position {
+          font-size: 1rem;
+        }
+        .description {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+`;
 const AboutSection = styled.section`
   padding: 30px;
 
@@ -148,6 +203,33 @@ const AboutSection = styled.section`
     margin-bottom: 20px;
     border-bottom: 2px white;
     padding-bottom: 10px;
+  }
+      @media (max-width: 768px) {
+    .about-title {
+      font-size: 2.5rem; /* Scale down title */
+    }
+
+    .experience-title {
+      font-size: 2rem; /* Adjust experience/education title */
+    }
+
+    .about-text {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 2rem;
+    }
+
+    .experience-title {
+      font-size: 1.8rem;
+    }
+
+    .about-text {
+      font-size: 1.2rem;
+    }
   }
 `;
 
