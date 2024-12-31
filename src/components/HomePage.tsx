@@ -132,7 +132,8 @@ const TimelineWrapper = styled.div`
       }
 
       .content {
-        margin-left: 15px;
+        margin-left: 0; /* Remove left margin for center alignment */
+        text-align: center; /* Center text */
 
         .title {
           font-size: 1.5rem;
@@ -164,8 +165,8 @@ const TimelineWrapper = styled.div`
       }
 
       .content {
-        margin-left: 0;
-        text-align: left;
+       margin-left: 0; /* Remove left margin for center alignment */
+        text-align: center; /* Center text */
 
         .title {
           font-size: 1.3rem;

@@ -68,6 +68,8 @@ const ContactSection = styled.section`
     .contact-info {
       margin-top: 20px; /* Add spacing between form and contact info */
       text-align: center; /* Center the text */
+      font-size: 2rem;
+
     }
   }
 }
