@@ -122,10 +122,13 @@ const TimelineWrapper = styled.div`
     }
   }
      @media (max-width: 768px) {
-    .timeline-item {
+     .timeline-item {
+      flex-direction: column; /* Stack the items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center;
+
       .bubble {
-        width: 100px; /* Ensure all bubbles have the same size */
-        height: 100px;
+        margin-bottom: 15px; /* Add some space below the bubble */
       }
 
       .content {
@@ -150,13 +153,14 @@ const TimelineWrapper = styled.div`
 
   @media (max-width: 480px) {
     .timeline-item {
-      flex-direction: column; /* Stack vertically */
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center; /* Center the bubble and text */
+      text-align: center;
 
       .bubble {
-        width: 100px; /* Keep the same size for all bubbles */
-        height: 100px;
-        margin-bottom: 10px;
+        margin-bottom: 15px; /* Add spacing between bubble and text */
+        width: 90px; /* Slightly reduce size for smaller screens */
+        height: 90px;
       }
 
       .content {
