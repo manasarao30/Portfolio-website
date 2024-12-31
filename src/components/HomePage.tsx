@@ -451,7 +451,7 @@ const Wrapper = styled.div`
   box-sizing: border-box;
 
   @media (max-width: 576px) {
-    padding: 15px;
+    padding: 10px;
   }
 `;
 
@@ -696,13 +696,13 @@ const AboutSection = styled.section`
       }
 
       @media (max-width: 768px) {
-        padding: 8px 16px; /* Adjust padding */
-        font-size: 0.9rem; /* Adjust font size */
+        // padding: 8px 16px; /* Adjust padding */
+        font-size: 2rem; /* Adjust font size */
       }
 
       @media (max-width: 576px) {
-        padding: 6px 12px; /* Match LinkedIn/GitHub button styles */
-        font-size: 0.8rem; /* Adjust font size */
+        // padding: 6px 12px; /* Match LinkedIn/GitHub button styles */
+        font-size: 1.5rem; /* Adjust font size */
       }
     }
   }
