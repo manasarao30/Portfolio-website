@@ -392,11 +392,11 @@ const SkillsSectionWrapper = styled.section`
       flex: 0 0 20%;
 
       @media (max-width: 768px) {
-        font-size: 1.8rem; /* Adjust font size for tablets */
+        font-size: 1rem; /* Adjust font size for tablets */
       }
 
       @media (max-width: 480px) {
-        font-size: 1.5rem; /* Adjust font size for mobile devices */
+        font-size: 0.8rem; /* Adjust font size for mobile devices */
       }
     }
 
@@ -451,12 +451,12 @@ const StyledSkillBadge = styled.span<SkillBadgeProps>`
   }
 
   @media (max-width: 768px) {
-    font-size: 0.8rem; /* Reduce font size for tablets */
+    font-size: 1rem; /* Reduce font size for tablets */
     padding: 8px 16px; /* Adjust padding for tablets */
   }
 
   @media (max-width: 480px) {
-    font-size: 0.4rem; /* Further reduce font size for mobile devices */
+    font-size: 0.9rem; /* Further reduce font size for mobile devices */
     padding: 6px 12px; /* Adjust padding for mobile devices */
   }
 `;
