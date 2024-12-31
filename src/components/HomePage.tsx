@@ -12,14 +12,8 @@ const getRandomColor = () => {
   const colors = ["#e63946", "#457b9d", "#2a9d8f", "#f4a261", "#e9c46a"];
   return colors[Math.floor(Math.random() * colors.length)];
 };
-// const Wrapper = styled.div`
-//   font-family: "Share Tech Mono", serif;
 
-//   background-color: black;
-//   color: white;
-//   min-height: 100vh;
-//   padding: 20px;
-// `;
+
 const Wrapper = styled.div`
   font-family: "Share Tech Mono", serif;
   background-color: black;
