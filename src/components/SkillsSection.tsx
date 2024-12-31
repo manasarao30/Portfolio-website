@@ -392,11 +392,11 @@ const SkillsSectionWrapper = styled.section`
       flex: 0 0 20%;
 
       @media (max-width: 768px) {
-        font-size: 1rem; /* Adjust font size for tablets */
+        font-size: 1.2rem; /* Adjust font size for tablets */
       }
 
       @media (max-width: 480px) {
-        font-size: 0.8rem; /* Adjust font size for mobile devices */
+        font-size: 1rem; /* Adjust font size for mobile devices */
       }
     }
 
@@ -522,7 +522,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3 style={{ fontSize: "2rem", marginRight: "20px", flex: "0 0 20%" }}>
+      <h3>
         Databases:
       </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
@@ -557,7 +557,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3 style={{ fontSize: "2rem", marginRight: "20px", flex: "0 0 20%" }}>
+      <h3>
         Cloud Platforms:
       </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
@@ -580,7 +580,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3 style={{ fontSize: "2rem", marginRight: "20px", flex: "0 0 20%" }}>
+      <h3>
         Frameworks & Tools:
       </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
@@ -619,7 +619,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3 style={{ fontSize: "2rem", marginRight: "20px", flex: "0 0 20%" }}>
+      <h3>
         Machine Learning & AI:
       </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
@@ -651,7 +651,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3 style={{ fontSize: "2rem", marginRight: "20px", flex: "0 0 20%" }}>
+      <h3>
         DevOps Tools:
       </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
@@ -690,7 +690,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3 style={{ fontSize: "2rem", marginRight: "20px", flex: "0 0 20%" }}>
+      <h3>
         Other Tools:
       </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
@@ -733,7 +733,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-  <h3 style={{ fontSize: "2rem", marginRight: "20px", flex: "0 0 20%" }}>
+  <h3>
     Certification:
   </h3>
   <div style={{ display: "flex", alignItems: "center", flex: 1 }}>
