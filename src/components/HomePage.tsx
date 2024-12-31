@@ -46,6 +46,15 @@ const ToggleWrapper = styled.div`
     font-size: 1.5rem;
     font-family: "Share Tech Mono", serif;
 
+    @media (max-width: 768px) {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    }
+     @media (max-width: 576px) {
+   padding: 6px 12px;
+    font-size: 0.8rem;
+    }
+
     cursor: pointer;
     transition: background-color 0.3s ease;
 

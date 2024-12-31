@@ -488,7 +488,7 @@ const SkillsSection = () => (
 
     {/* Programming Languages */}
     <div>
-      <h3>Programming Languages:</h3>
+      <h3>Programming Languages:    </h3>
       <div className="skill-badges">
         <SkillBadge
           icon="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
@@ -525,7 +525,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>Databases:</h3>
+      <h3>Databases:    </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
@@ -558,7 +558,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>Cloud Platforms:</h3>
+      <h3>Cloud Platforms:    </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/aws-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
@@ -579,7 +579,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>Frameworks & Tools:</h3>
+      <h3>Frameworks & Tools:   </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
@@ -616,7 +616,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>Machine Learning & AI:</h3>
+      <h3>Machine Learning & AI:    </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/tensorflow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white"
@@ -645,7 +645,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>DevOps Tools:</h3>
+      <h3>DevOps Tools:   </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white"
@@ -682,7 +682,7 @@ const SkillsSection = () => (
         marginBottom: "30px",
       }}
     >
-      <h3>Other Tools:</h3>
+      <h3>Other Tools:    </h3>
       <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap: "10px" }}>
         <SkillBadge
           icon="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white"
