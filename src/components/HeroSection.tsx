@@ -119,7 +119,7 @@ const playClickSound = () => {
   audio.play();
 };
 const HeroSection = () => (
-  <Hero>
+  <Hero id="home">
    <motion.div
     initial={{ opacity: 0, y: 50 }} // Animation starts 50px below
     animate={{ opacity: 1, y: 0 }}  // Moves back to its original position

@@ -697,7 +697,7 @@ const AboutSection = styled.section`
 
       @media (max-width: 768px) {
         // padding: 8px 16px; /* Adjust padding */
-        font-size: 2rem; /* Adjust font size */
+        font-size: 1.5rem; /* Adjust font size */
       }
 
       @media (max-width: 576px) {
