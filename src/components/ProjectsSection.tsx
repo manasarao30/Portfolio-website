@@ -14,12 +14,12 @@ const ProjectsWrapper = styled.section`
     padding-bottom: 10px;
     // text-align: center;
 
-     @media (max-width: 768px) {
-      font-size: 2.5rem; /* Reduce font size for tablets */
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
     }
 
     @media (max-width: 480px) {
-      font-size: 2rem; /* Further reduce font size for mobile devices */
+      font-size: 2rem;
     }
   }
 
@@ -48,31 +48,30 @@ const ProjectsWrapper = styled.section`
         background-color: gray;
         color: white;
       }
-    @media (max-width: 768px) {
-      padding: 8px 12px; /* Smaller padding on tablet screens */
-      font-size: 1rem; /* Reduce font size for smaller screens */
-    }
-
-    @media (max-width: 576px) {
-      padding: 6px 10px; /* Further reduce padding for small devices */
-      font-size: 0.9rem; /* Smaller font size for mobile devices */
-    }
+      @media (max-width: 768px) {
+        padding: 8px 12px;
+        font-size: 1rem;
       }
-      
+
+      @media (max-width: 576px) {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+      }
+    }
   }
 
   .projects-grid {
     display: flex;
-    justify-content: center; 
-    gap: 0; 
+    justify-content: center;
+    gap: 0;
     flex-wrap: wrap;
 
     .project-card {
       background-color: #1a1a1a;
       border-radius: 10px;
       overflow: hidden;
-      width: 300px; 
-      margin: 10px; 
+      width: 300px;
+      margin: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -82,9 +81,9 @@ const ProjectsWrapper = styled.section`
       }
 
       img {
-        width: 100%; 
-        height: 200px; 
-        object-fit: cover; 
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
       }
 
       .project-content {
@@ -117,7 +116,6 @@ const ProjectsWrapper = styled.section`
     }
   }
 `;
-
 
 const playClickSound = () => {
   const audio = new Audio("./sounds/click.mp3");

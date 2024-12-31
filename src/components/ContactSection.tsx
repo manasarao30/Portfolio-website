@@ -73,37 +73,36 @@ const ContactSection = styled.section`
 
   @media (max-width: 768px) {
     .contact-content {
-      flex-direction: column; /* Stack form and contact info vertically */
-      align-items: center; /* Center the items horizontally */
+      flex-direction: column;
+      align-items: center;
 
       .form-container {
-        margin-right: 0; /* Remove right margin when stacked */
-        width: 100%; /* Full width on smaller screens */
+        margin-right: 0;
+        width: 100%;
       }
 
       .contact-info {
-        margin-top: 20px; /* Add spacing between form and contact info */
-        text-align: center; /* Center the text */
-        font-size: 1.2rem; /* Slightly smaller text size */
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.2rem;
       }
     }
 
     .contact-title {
-      font-size: 2.5rem; /* Adjust title font size for smaller screens */
+      font-size: 2.5rem;
     }
   }
 
   @media (max-width: 480px) {
     .contact-title {
-      font-size: 2rem; /* Further reduce title font size for very small screens */
+      font-size: 2rem;
     }
 
     .contact-info {
-      font-size: 1rem; /* Reduce contact info text size further */
+      font-size: 1rem;
     }
   }
 `;
-
 
 const playSound = () => {
   const audio = new Audio("./sounds/click.mp3");
