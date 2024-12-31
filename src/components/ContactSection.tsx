@@ -56,25 +56,20 @@ const ContactSection = styled.section`
         }
       }
     }
- @media (max-width: 768px) {
+@media (max-width: 768px) {
+    flex-direction: column; /* Stack form and contact info vertically */
+    align-items: center; /* Center the items horizontally */
     .contact-title {
-      font-size: 2rem; /* Reduced font size for smaller screens */
+    font-size: 2rem;
+}
+    .form-container {
+      margin-right: 0; /* Remove the margin when stacked */
+      width: 100%; /* Ensure it spans the full width */
     }
 
-    .contact-content {
-      flex-direction: column; /* Stack form and contact info vertically */
-      align-items: center; /* Center the items horizontally */
-
-      .form-container {
-        margin-right: 0; /* Remove the margin when stacked */
-        width: 100%; /* Ensure it spans the full width */
-      }
-
-      .contact-info {
-        margin-top: 20px; /* Add spacing between form and contact info */
-        text-align: center; /* Center the text */
-        font-size: 1.5rem;
-      }
+    .contact-info {
+      margin-top: 20px; /* Add spacing between form and contact info */
+      text-align: center; /* Center the text */
     }
   }
 
@@ -82,17 +77,7 @@ const ContactSection = styled.section`
     .contact-title {
       font-size: 1.8rem; /* Further reduced font size for very small screens */
     }
-
-    .contact-content {
-      .form-container {
-        width: 100%; /* Ensure it spans the full width on very small screens */
-      }
-
-      .contact-info {
-        font-size: 1.2rem; /* Slightly smaller font size for the contact info */
-      }
-    }
-  }
+}
 }
     .contact-info {
       flex: 1;
