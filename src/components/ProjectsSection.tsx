@@ -13,6 +13,14 @@ const ProjectsWrapper = styled.section`
     border-bottom: 2px solid white;
     padding-bottom: 10px;
     // text-align: center;
+
+     @media (max-width: 768px) {
+      font-size: 2.5rem; /* Reduce font size for tablets */
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2rem; /* Further reduce font size for mobile devices */
+    }
   }
 
   .filter-buttons {
@@ -109,6 +117,7 @@ const ProjectsWrapper = styled.section`
     }
   }
 `;
+
 
 const playClickSound = () => {
   const audio = new Audio("./sounds/click.mp3");
